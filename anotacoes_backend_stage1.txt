@@ -1,0 +1,48 @@
+npm init -y
+npm install typescript
+npm install express
+npm install -D @types/express 
+npm install ts-node-dev
+npx tsc --init
+npm install prisma --save-dev
+npx prisma init
+npm install -D dotenv
+npm install axios
+npm install -D @types/axios
+npm install jsonwebtoken
+npm install -D @types/jsonwebtoken
+
+token usuario gerado quando acessado
+http://localhost:4000/github
+copiar o token gerado no html e utilizar na rota post authenticate parametro code 
+{"code": "68ca3375f2a89db7aad7"} resposta o token de acesso
+
+settings.json:
+"[prisma]":{
+    "editor.defaultFormatter": "Prisma.prisma"
+}
+
+apos configurado o schema.prisma:
+nome do banco de dados 'dev'/ nome da migration 'create_user'
+npx prisma migrate dev --name create_user
+
+package.json
+ --exit-child    quando usado o prismma a aplicação fica presa
+"dev": "ts-node-dev --exit-child src/app.ts"
+
+quando criada um nova migrate precisou reiniciar o visual studio code ser disponibilizada
+
+abrir o banco de dados criado pelo prisma
+npx prisma studio 
+
+
+npm install socket.io
+npm install -D @types/socket.io
+    
+npm install cors
+npm install -D @types/cors
+
+dica insominia variavel de requisicao 
+entrar em management environment digitar a key e digitar response e esperar o emit do response 
+clicar no response criado pelo emit com ctrl
+

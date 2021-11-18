@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es2017",                                      /*changed*/                         
+    "module": "commonjs",                                
+    "esModuleInterop": true,                             
+    "forceConsistentCasingInFileNames": true,            
+    "strict": false,                                        /*changed*/                                
+    "skipLibCheck": true,                               
+    "typeRoots": ["./src/@types", "node_modules/@types"]    /*forçar a encontrar os diretorios personalizados no src/@types*/
+  }
+}
