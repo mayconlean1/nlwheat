@@ -1,0 +1,11 @@
+npm init vite@latest web --template react-ts
+cd web
+npm install
+
+//permite encadeamento css 
+.umaclasse{
+    h1{
+        color:red;
+    }
+}
+npm install sass
