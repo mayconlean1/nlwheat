@@ -46,3 +46,6 @@ dica insominia variavel de requisicao
 entrar em management environment digitar a key e digitar response e esperar o emit do response 
 clicar no response criado pelo emit com ctrl
 
+
+tentar executar migrations no docker
+https://qastack.com.br/programming/33992867/how-do-you-perform-django-database-migrations-when-using-docker-compose

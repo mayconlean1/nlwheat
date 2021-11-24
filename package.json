@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --exit-child src/server.ts"
+    "dev": "ts-node-dev --exit-child src/server.ts",
+    "build-conteiners": "docker-compose up --build -d",
+    "init-conteiners": "docker-compose up -d",
+    "init-backend": "docker start backendnlwheat"
   },
   "keywords": [],
   "author": "",
