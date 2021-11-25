@@ -35,7 +35,6 @@ quando criada um nova migrate precisou reiniciar o visual studio code ser dispon
 abrir o banco de dados criado pelo prisma
 npx prisma studio 
 
-
 npm install socket.io
 npm install -D @types/socket.io
     
