@@ -30,7 +30,7 @@ app.get('/github', (req,res)=>{
     res.redirect(`https://github.com/login/oauth/authorize?client_id=${process.env.GITHUB_CLIENT_ID}`)
 })
 
-app.get('/signin/callback', (req,res)=>{
+app.get('/signin/callback', (req,res)=>{ /rowser recebe o code
     const {code} = req.query
 
     return res.json(code)
