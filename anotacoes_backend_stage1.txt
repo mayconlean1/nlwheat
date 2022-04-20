@@ -17,10 +17,15 @@ http://localhost:4000/github
 copiar o token gerado no html e utilizar na rota post authenticate parametro code 
 {"code": "68ca3375f2a89db7aad7"} resposta o token de acesso
 
-settings.json:
-"[prisma]":{
-    "editor.defaultFormatter": "Prisma.prisma"
-}
+
+abrir pesquisa ctrl+shift+P e procurar por settings
+add a linha  
+>
+    settings.json:
+    "[prisma]":{
+        "editor.defaultFormatter": "Prisma.prisma"
+    }
+>
 
 apos configurado o schema.prisma:
 nome do banco de dados 'dev'/ nome da migration 'create_user'

@@ -1,4 +1,5 @@
 node_modules/
 web/
+mobile/
 .env
 docker-compose.yml

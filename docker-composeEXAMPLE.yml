@@ -8,9 +8,20 @@ services:
       - "4000:4000"
     command: npm run dev
     environment:
-      - GITHUB_CLIENT_SECRET=
-      - GITHUB_CLIENT_ID=
+      - GITHUB_CLIENT_SECRET= //enter scret here
+      - GITHUB_CLIENT_ID= //enter client id here
 
     volumes: 
       - .:/usr/app
+
+    depends_on:
+      - migration
+  
+  migration:
+    build: .
+    command: npx prisma migrate dev --name create_user
+    volumes: 
+      - .:/usr/app
+
       
+
